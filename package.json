@@ -6,9 +6,19 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "contentlayer": "^0.3.0",
+    "date-fns": "^2.29.3",
+    "install": "^0.13.0",
     "next": "latest",
+    "next-contentlayer": "^0.3.0",
+    "npm": "^9.6.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-slug": "^5.1.0",
+    "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
