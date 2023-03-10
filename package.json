@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.9",
+    "any-observable": "^0.5.1",
     "contentlayer": "^0.3.0",
     "date-fns": "^2.29.3",
     "install": "^0.13.0",
