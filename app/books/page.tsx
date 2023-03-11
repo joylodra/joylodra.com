@@ -25,7 +25,7 @@ const Books = () => {
         audioBookLink={"https://amzn.to/3JrDdKq"}
       />
 
-      <hr className="opacity-25 mt-5 mb-5" />
+      <hr className="dark:opacity-25 mt-5 mb-5" />
 
       <Book
         title={"the minimalist entrepreneur"}
@@ -38,7 +38,7 @@ const Books = () => {
         audioBookLink={"https://amzn.to/3Jt11he"}
       />
 
-      <hr className="opacity-25 mt-5 mb-5" />
+      <hr className="dark:opacity-25 mt-5 mb-5" />
 
       <Book
         title={"the coaching habit"}
@@ -51,7 +51,7 @@ const Books = () => {
         audioBookLink={"https://amzn.to/3yoTcm9"}
       />
 
-      <hr className="opacity-25 mt-5 mb-5" />
+      <hr className="dark:opacity-25 mt-5 mb-5" />
 
       <Book
         title={"the lean startup"}

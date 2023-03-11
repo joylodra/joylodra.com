@@ -27,7 +27,7 @@ const About = () => {
         Indonesia in a positive way.
       </p>
 
-      <hr className="mt-5 mb-5 opacity-20" />
+      <hr className="mt-5 mb-5 dark:opacity-25" />
 
       <p>
         when it comes to coding, there's nothing that excites me more than
@@ -45,8 +45,8 @@ const About = () => {
         <Link
           rel="noopener noreferrer"
           target="_blank"
-          className="flex justify-between items-center border border-white border-opacity-25 
-          rounded-lg p-2 hover:bg-[#262626] transition-opacity"
+          className="flex justify-between items-center border border-black dark:border-white border-opacity-25 
+          rounded-lg p-2 hover:bg-neutral-100 dark:hover:bg-[#262626] transition-opacity"
           href="https://twitter.com/joylodra"
         >
           <div className="flex items-center gap-2">
@@ -58,8 +58,8 @@ const About = () => {
         <Link
           rel="noopener noreferrer"
           target="_blank"
-          className="flex justify-between items-center border border-white border-opacity-25 
-          rounded-lg p-2 hover:bg-[#262626] transition-opacity"
+          className="flex justify-between items-center border border-black dark:border-white border-opacity-25 
+          rounded-lg p-2 hover:bg-neutral-100 dark:hover:bg-[#262626] transition-opacity"
           href="https://instagram.com/joylodra"
         >
           <div className="flex items-center gap-2">
@@ -71,8 +71,8 @@ const About = () => {
         <Link
           rel="noopener noreferrer"
           target="_blank"
-          className="flex justify-between items-center border border-white border-opacity-25 
-          rounded-lg p-2 hover:bg-[#262626] transition-opacity"
+          className="flex justify-between items-center border border-black dark:border-white border-opacity-25 
+          rounded-lg p-2 hover:bg-neutral-100 dark:hover:bg-[#262626] transition-opacity"
           href="https://youtube.com/@joylodra"
         >
           <div className="flex items-center gap-2">
@@ -84,8 +84,8 @@ const About = () => {
         <Link
           rel="noopener noreferrer"
           target="_blank"
-          className="flex justify-between items-center border border-white border-opacity-25 
-          rounded-lg p-2 hover:bg-[#262626] transition-opacity"
+          className="flex justify-between items-center border border-black dark:border-white border-opacity-25 
+          rounded-lg p-2 hover:bg-neutral-100 dark:hover:bg-[#262626] transition-opacity"
           href="https://github.com/joylodra"
         >
           <div className="flex items-center gap-2">
@@ -97,8 +97,8 @@ const About = () => {
         <Link
           rel="noopener noreferrer"
           target="_blank"
-          className="flex justify-between items-center border border-white border-opacity-25 
-          rounded-lg p-2 hover:bg-[#262626] transition-opacity"
+          className="flex justify-between items-center border border-black dark:border-white border-opacity-25 
+          rounded-lg p-2 hover:bg-neutral-100 dark:hover:bg-[#262626] transition-opacity"
           href="https://linkedin.com/in/joylodra"
         >
           <div className="flex items-center gap-2">

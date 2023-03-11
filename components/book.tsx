@@ -36,8 +36,8 @@ const Book = ({
         <Link
           rel="noopener noreferrer"
           target="_blank"
-          className="flex items-center p-2 border border-white border-opacity-25
-          rounded-lg justify-between gap-2 hover:bg-[#262626] transition-opacity"
+          className="flex items-center p-2 border border-black dark:border-white border-opacity-25
+          rounded-lg justify-between gap-2 hover:bg-neutral-100 dark:hover:bg-[#262626] transition-opacity"
           href={printLink}
         >
           <div className="flex items-center gap-2">
@@ -50,8 +50,8 @@ const Book = ({
         <Link
           rel="noopener noreferrer"
           target="_blank"
-          className="flex items-center p-2 border border-white border-opacity-25
-          rounded-lg justify-between gap-2 hover:bg-[#262626] transition-opacity"
+          className="flex items-center p-2 border border-black dark:border-white border-opacity-25
+          rounded-lg justify-between gap-2 hover:bg-neutral-100 dark:hover:bg-[#262626] transition-opacity"
           href={eBookLink}
         >
           <div className="flex items-center gap-2">
@@ -64,8 +64,8 @@ const Book = ({
         <Link
           rel="noopener noreferrer"
           target="_blank"
-          className="flex items-center p-2 border border-white border-opacity-25
-          rounded-lg justify-between gap-2 hover:bg-[#262626] transition-opacity"
+          className="flex items-center p-2 border border-black dark:border-white border-opacity-25
+          rounded-lg justify-between gap-2 hover:bg-neutral-100 dark:hover:bg-[#262626] transition-opacity"
           href={audioBookLink}
         >
           <div className="flex items-center gap-2">

@@ -18,7 +18,9 @@ const Sidebar = () => {
         <div className="flex flex-row gap-1 font-serif font-bold transition-all md:flex-col">
           <Link
             className={`px-2 py-1 hover:opacity-100 rounded-lg ${
-              pathname === "/" ? "bg-[#262626] opacity-100" : "opacity-50"
+              pathname === "/"
+                ? "bg-neutral-100 dark:bg-[#262626] opacity-100"
+                : "opacity-50"
             }`}
             href="/"
           >
@@ -27,7 +29,9 @@ const Sidebar = () => {
 
           <Link
             className={`px-2 py-1 hover:opacity-100 rounded-lg ${
-              pathname === "/about" ? "bg-[#262626] opacity-100" : "opacity-50"
+              pathname === "/about"
+                ? "bg-neutral-100 dark:bg-[#262626] opacity-100"
+                : "opacity-50"
             }`}
             href="/about"
           >
@@ -36,7 +40,9 @@ const Sidebar = () => {
 
           <Link
             className={`px-2 py-1 hover:opacity-100 rounded-lg ${
-              pathname === "/blog" ? "bg-[#262626] opacity-100" : "opacity-50"
+              pathname === "/blog"
+                ? "bg-neutral-100 dark:bg-[#262626] opacity-100"
+                : "opacity-50"
             }`}
             href="/blog"
           >
@@ -45,7 +51,9 @@ const Sidebar = () => {
 
           <Link
             className={`px-2 py-1 hover:opacity-100 rounded-lg ${
-              pathname === "/books" ? "bg-[#262626] opacity-100" : "opacity-50"
+              pathname === "/books"
+                ? "bg-neutral-100 dark:bg-[#262626] opacity-100"
+                : "opacity-50"
             }`}
             href="/books"
           >
