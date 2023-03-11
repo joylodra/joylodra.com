@@ -25,13 +25,13 @@ const Home = () => {
           className="rounded-full grayscale"
           src={"https://github.com/joylodra.png"}
           alt="profile picture"
-          width={100}
-          height={100}
+          width={120}
+          height={120}
         />
 
-        <div className="flex flex-col space-y-1">
+        <div className="flex flex-col">
           <Link
-            className="flex items-center gap-2 opacity-50 hover:opacity-100 hover:underline"
+            className="flex items-center gap-2 opacity-50 p-1 hover:opacity-100 hover:underline"
             rel="noopener noreferrer"
             target="_blank"
             href="https://twitter.com/joylodra"
@@ -40,7 +40,7 @@ const Home = () => {
           </Link>
 
           <Link
-            className="flex items-center gap-2 opacity-50 hover:opacity-100 hover:underline"
+            className="flex items-center gap-2 p-1 opacity-50 hover:opacity-100 hover:underline"
             rel="noopener noreferrer"
             target="_blank"
             href="https://instagram.com/joylodra"
@@ -49,7 +49,7 @@ const Home = () => {
           </Link>
 
           <Link
-            className="flex items-center gap-2 opacity-50 hover:opacity-100 hover:underline"
+            className="flex items-center gap-2 p-1 opacity-50 hover:opacity-100 hover:underline"
             rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/joylodra"
@@ -58,7 +58,7 @@ const Home = () => {
             18 repos all time
           </Link>
           <Link
-            className="flex items-center gap-2 opacity-50 hover:opacity-100 hover:underline"
+            className="flex items-center gap-2 p-1 opacity-50 hover:opacity-100 hover:underline"
             href="/blog"
           >
             <BsYoutube /> 0 youtube video views all time
