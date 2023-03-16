@@ -22,9 +22,9 @@ const About = () => {
       <p>
         hey there, my name is joy. it's great to have you here on my personal
         page. i'm currently on an exciting entrepreneurship journey in the
-        startup game. my ultimate goal? to create a <b>unicorn company</b> that
-        not only makes a profit, but also contributes to the economic growth of
-        Indonesia in a positive way.
+        startup game. my ultimate goal? to create a
+        <b>profitable unicorn company</b> that contributes to the economic
+        growth of Indonesia in a positive way.
       </p>
 
       <hr className="mt-5 mb-5 dark:opacity-25" />
