@@ -6,6 +6,29 @@ export const metadata: Metadata = {
   title: "joy lodra",
   description:
     "welcome to my personal blog where i mostly talk about tech, books, & self-improvement!",
+  openGraph: {
+    title: "Joy Lodra",
+    description:
+      "welcome to my personal blog where i mostly talk about tech, books, & self-improvement!",
+    url: "https://joylodra.com",
+    siteName: "Joy Lodra",
+    locale: "en-US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "_cfe-1Y3vrQq1dNPtJgfnOPE_I7D8zwdw1b3W6h9s_A",
+  },
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { format, parseISO } from "date-fns";
 import { notFound } from "next/navigation";
 import { allBlogs } from "contentlayer/generated";
@@ -15,6 +16,34 @@ export async function generateStaticParams() {
   return allBlogs.map((post) => ({
     slug: post.slug,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}): Promise<Metadata | undefined> {
+  const post = allBlogs.find((post) => post.slug === params.slug);
+  if (!post) {
+    return;
+  }
+
+  const {
+    title,
+    publishedAt: publishedTime,
+    summary: description,
+    slug,
+  } = post;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      publishedTime,
+      url: `https://joylodra.com/blog/${slug}`,
+    },
+  };
 }
 
 const CustomLink = (props: any) => {
