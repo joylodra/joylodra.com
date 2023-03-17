@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import type { Metadata } from "next";
 import Sidebar from "@components/sidebar";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: {
@@ -54,6 +55,8 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           <main className="md:mt-5 mb-5">{children}</main>
         </div>
       </body>
+
+      <Analytics />
     </html>
   );
 };
