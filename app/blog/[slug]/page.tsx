@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { format, parseISO } from "date-fns";
 import { notFound } from "next/navigation";
-import Mdx from "@components/mdx";
 import { allBlogs } from "contentlayer/generated";
 import { BsArrowUpRight } from "react-icons/bs";
 import { useMDXComponent } from "next-contentlayer/hooks";
