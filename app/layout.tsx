@@ -1,9 +1,13 @@
 import "../styles/globals.css";
 import type { Metadata } from "next";
-import Sidebar from "../components/sidebar";
+import Sidebar from "../components/Sidebar";
 
 export const metadata: Metadata = {
-  title: "joy lodra",
+  title: {
+    default: "joy lodra",
+    template: "%s | joy lodra",
+  },
+  keywords: ["joy lodra", "startup founder", "personal blog"],
   description:
     "welcome to my personal blog where i mostly talk about tech, books, & self-improvement!",
   openGraph: {
@@ -25,6 +29,13 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  twitter: {
+    title: "Joy Lodra",
+    card: "summary_large_image",
+  },
+  icons: {
+    shortcut: "/favicon.ico",
   },
   verification: {
     google: "_cfe-1Y3vrQq1dNPtJgfnOPE_I7D8zwdw1b3W6h9s_A",

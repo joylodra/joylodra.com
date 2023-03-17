@@ -12,6 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "about me",
   description: "full-stack developer, reader, & startup founder",
+  keywords: ["startup founder", "reader", "full-stack developer"],
 };
 
 const About = () => {

@@ -23,9 +23,12 @@ export type Blog = {
   summary: string
   /** The image of the post */
   image?: string | undefined
+  /** The keywords of the post */
+  keywords?: string | undefined
   /** MDX file body */
   body: MDX
   slug: string
+  structuredData: object
 }  
 
 /** Nested types */

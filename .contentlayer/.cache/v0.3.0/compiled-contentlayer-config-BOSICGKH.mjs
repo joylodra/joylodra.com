@@ -1,13 +1,12 @@
+// contentlayer.config.js
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
-// import rehypePrettyCode from "rehype-pretty-code";
-
-const computedFields = {
+var computedFields = {
   slug: {
     type: "string",
-    resolve: (blog) => blog._raw.flattenedPath,
+    resolve: (blog) => blog._raw.flattenedPath
   },
   structuredData: {
     type: "object",
@@ -18,19 +17,16 @@ const computedFields = {
       datePublished: doc.publishedAt,
       dateModified: doc.publishedAt,
       description: doc.summary,
-      image: doc.image
-        ? `https://joylodra.com${doc.image}`
-        : `https://joylodra.com/api/og?title=${doc.title}`,
+      image: doc.image ? `https://joylodra.com${doc.image}` : `https://joylodra.com/api/og?title=${doc.title}`,
       url: `https://joylodra.com/blog/${doc._raw.flattenedPath}`,
       author: {
         "@type": "Person",
-        name: "Joy Lodra",
-      },
-    }),
-  },
+        name: "Joy Lodra"
+      }
+    })
+  }
 };
-
-export const Blog = defineDocumentType(() => ({
+var Blog = defineDocumentType(() => ({
   name: "Blog",
   filePathPattern: `**/*.mdx`,
   contentType: "mdx",
@@ -38,36 +34,35 @@ export const Blog = defineDocumentType(() => ({
     title: {
       type: "string",
       description: "The title of the post",
-      required: true,
+      required: true
     },
     author: {
       type: "string",
       description: "The author of the post",
-      required: true,
+      required: true
     },
     publishedAt: {
       type: "date",
       description: "The date of the post",
-      required: true,
+      required: true
     },
     summary: {
       type: "string",
       description: "The summary of the post",
-      required: true,
+      required: true
     },
     image: {
       type: "string",
-      description: "The image of the post",
+      description: "The image of the post"
     },
     keywords: {
-      type: "string",
-      description: "The keywords of the post",
-    },
+      type: "array",
+      description: "The keywords of the post"
+    }
   },
-  computedFields,
+  computedFields
 }));
-
-export default makeSource({
+var contentlayer_config_default = makeSource({
   contentDirPath: "contents",
   documentTypes: [Blog],
   mdx: {
@@ -78,10 +73,15 @@ export default makeSource({
         rehypeAutolinkHeadings,
         {
           properties: {
-            className: ["anchor"],
-          },
-        },
-      ],
-    ],
-  },
+            className: ["anchor"]
+          }
+        }
+      ]
+    ]
+  }
 });
+export {
+  Blog,
+  contentlayer_config_default as default
+};
+//# sourceMappingURL=compiled-contentlayer-config-BOSICGKH.mjs.map

@@ -7,6 +7,23 @@ var computedFields = {
   slug: {
     type: "string",
     resolve: (blog) => blog._raw.flattenedPath
+  },
+  structuredData: {
+    type: "object",
+    resolve: (doc) => ({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: doc.title,
+      datePublished: doc.publishedAt,
+      dateModified: doc.publishedAt,
+      description: doc.summary,
+      image: doc.image ? `https://joylodra.com${doc.image}` : `https://joylodra.com/api/og?title=${doc.title}`,
+      url: `https://joylodra.com/blog/${doc._raw.flattenedPath}`,
+      author: {
+        "@type": "Person",
+        name: "Joy Lodra"
+      }
+    })
   }
 };
 var Blog = defineDocumentType(() => ({
@@ -37,6 +54,10 @@ var Blog = defineDocumentType(() => ({
     image: {
       type: "string",
       description: "The image of the post"
+    },
+    keywords: {
+      type: "string",
+      description: "The keywords of the post"
     }
   },
   computedFields
@@ -63,4 +84,4 @@ export {
   Blog,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-NZDQPTJL.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-3G3YMC5K.mjs.map

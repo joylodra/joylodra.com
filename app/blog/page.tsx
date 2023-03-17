@@ -6,6 +6,7 @@ import { compareDesc, format, parseISO } from "date-fns";
 export const metadata: Metadata = {
   title: "blog",
   description: "i write about tech, books, & self-improvement",
+  keywords: ["tech", "books", "self-improvement"],
 };
 
 const Blog = () => {

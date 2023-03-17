@@ -1,10 +1,11 @@
 import { Metadata } from "next";
-import Book from "../../components/book";
+import Book from "../../components/Book";
 
 export const metadata: Metadata = {
   title: "books",
   description:
     "recommended self-help books i read during to improve my life in every aspect.",
+  keywords: ["self-help books", "read", "reading habits"],
 };
 
 const Books = () => {
