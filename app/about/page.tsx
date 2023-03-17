@@ -42,6 +42,11 @@ const About = () => {
         page as life goes on 😊
       </p>
 
+      <p>
+        feel free to hit me up by clicking on one of the links below or send me
+        an email to joylodra@gmail.com
+      </p>
+
       <div className="grid grid-cols-1 gap-2 mt-5 md:grid-cols-3">
         <Link
           rel="noopener noreferrer"
