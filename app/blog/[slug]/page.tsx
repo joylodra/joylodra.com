@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { format, parseISO } from "date-fns";
 import { notFound } from "next/navigation";
 import { allBlogs } from "contentlayer/generated";
-import Mdx from "../../../components/mdx";
+import Mdx from "components/mdx";
 
 type Props = {
   params: {
