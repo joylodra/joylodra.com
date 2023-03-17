@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { format, parseISO } from "date-fns";
 import { notFound } from "next/navigation";
-import { allBlogs } from "contentlayer/generated";
 import Mdx from "components/mdx";
+import { allBlogs } from "contentlayer/generated";
+import Link from "next/link";
+import { BsArrowUpRight } from "react-icons/bs";
 
 type Props = {
   params: {
@@ -88,6 +90,32 @@ const Post = ({ params: { slug } }: Props) => {
       </div>
 
       <Mdx code={post.body.code} />
+
+      <hr />
+
+      <div className="bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-4">
+        <h3 className="m-0">follow my socials 📱</h3>
+        <div className="flex flex-col gap-3 md:flex-row mt-1">
+          <Link
+            rel="noopener noreferrer"
+            target="_blank"
+            className="flex items-center gap-1 opacity-50 hover:opacity-100 hover:underline"
+            href="https://twitter.com/joylodra"
+          >
+            <BsArrowUpRight />
+            twitter
+          </Link>
+          <Link
+            rel="noopener noreferrer"
+            target="_blank"
+            className="flex items-center gap-1 opacity-50 hover:opacity-100 hover:underline"
+            href="https://instagram.com/joylodra"
+          >
+            <BsArrowUpRight />
+            instagram
+          </Link>
+        </div>
+      </div>
     </article>
   );
 };

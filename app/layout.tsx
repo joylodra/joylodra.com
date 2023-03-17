@@ -51,7 +51,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body className="antialiased max-w-4xl mx-auto p-5">
         <div className="flex flex-col gap-5 md:mt-10 md:flex-row md:gap-16">
           <Sidebar />
-          <main className="md:mt-5">{children}</main>
+          <main className="md:mt-5 mb-5">{children}</main>
         </div>
       </body>
     </html>
