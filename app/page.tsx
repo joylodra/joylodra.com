@@ -22,7 +22,7 @@ const Home = () => {
 
       <div className="flex flex-col md:flex-row md:items-center gap-3">
         <Image
-          className="rounded-full grayscale"
+          className="rounded-full"
           src={"https://github.com/joylodra.png"}
           alt="profile picture"
           width={120}
