@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   BsTwitter,
   BsInstagram,
@@ -23,10 +24,22 @@ const About = () => {
       <p>
         hey there, my name is joy. it's great to have you here on my personal
         page. i'm currently on an exciting entrepreneurship journey in the
-        startup game. my ultimate goal? to create a{" "}
-        <b>profitable unicorn company</b> that contributes to the economic
-        growth of Indonesia in a positive way.
+        startup game. my ultimate goal? freedom of{" "}
+        <b>time, money, and location</b>.
       </p>
+
+      <p>
+        glad you got to this page because the image below showcases my ups and
+        downs so far:
+      </p>
+
+      <Image
+        className="rounded-lg"
+        src="/images/assets/journey.png"
+        alt="my life journey"
+        width={1600}
+        height={840}
+      />
 
       <hr className="mt-5 mb-5 dark:opacity-25" />
 
