@@ -29,4 +29,9 @@
     <loc>https://www.joylodra.com/blog/build-a-strong-team</loc>
     <priority>0.64</priority>
 </url>
+
+<url>
+    <loc>https://www.joylodra.com/blog/find-a-startup-idea</loc>
+    <priority>0.64</priority>
+</url>
 </urlset>
