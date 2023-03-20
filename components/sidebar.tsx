@@ -16,16 +16,18 @@ const Sidebar = () => {
         </Link>
 
         <div className="flex flex-row gap-1 font-serif font-bold transition-all md:flex-col">
-          <Link
-            className={`px-2 py-1 hover:opacity-100 rounded-lg ${
-              pathname === "/"
-                ? "bg-neutral-100 dark:bg-[#262626] opacity-100"
-                : "opacity-50"
-            }`}
-            href="/"
-          >
-            home
-          </Link>
+          <div className="flex">
+            <Link
+              className={`px-2 py-1 hover:opacity-100 rounded-lg ${
+                pathname === "/"
+                  ? "bg-neutral-100 dark:bg-[#262626] opacity-100"
+                  : "opacity-50"
+              }`}
+              href="/"
+            >
+              home
+            </Link>
+          </div>
 
           <Link
             className={`px-2 py-1 hover:opacity-100 rounded-lg ${
@@ -38,27 +40,31 @@ const Sidebar = () => {
             about
           </Link>
 
-          <Link
-            className={`px-2 py-1 hover:opacity-100 rounded-lg ${
-              pathname === "/blog"
-                ? "bg-neutral-100 dark:bg-[#262626] opacity-100"
-                : "opacity-50"
-            }`}
-            href="/blog"
-          >
-            blog
-          </Link>
+          <div className="flex">
+            <Link
+              className={`px-2 py-1 hover:opacity-100 rounded-lg ${
+                pathname === "/blog"
+                  ? "bg-neutral-100 dark:bg-[#262626] opacity-100"
+                  : "opacity-50"
+              }`}
+              href="/blog"
+            >
+              blog
+            </Link>
+          </div>
 
-          <Link
-            className={`px-2 py-1 hover:opacity-100 rounded-lg ${
-              pathname === "/books"
-                ? "bg-neutral-100 dark:bg-[#262626] opacity-100"
-                : "opacity-50"
-            }`}
-            href="/books"
-          >
-            books
-          </Link>
+          <div className="flex">
+            <Link
+              className={`px-2 py-1 hover:opacity-100 rounded-lg ${
+                pathname === "/books"
+                  ? "bg-neutral-100 dark:bg-[#262626] opacity-100"
+                  : "opacity-50"
+              }`}
+              href="/books"
+            >
+              books
+            </Link>
+          </div>
         </div>
       </div>
     </div>
