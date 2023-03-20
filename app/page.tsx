@@ -59,7 +59,7 @@ const Home = () => {
           </Link>
           <Link
             className="flex items-center gap-2 p-1 opacity-50 hover:opacity-100 hover:underline"
-            href="/blog"
+            href="https://youtube.com/@joylodra"
           >
             <BsYoutube /> 0 youtube video views all time
           </Link>
