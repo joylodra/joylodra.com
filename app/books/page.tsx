@@ -12,7 +12,7 @@ const Books = () => {
   return (
     <div className="flex flex-col gap-5">
       <h1 className="text-4xl font-serif tracking-tighter">
-        recommended books
+        books i recommend
       </h1>
 
       <Book

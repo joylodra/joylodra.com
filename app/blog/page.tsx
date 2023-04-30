@@ -2,10 +2,11 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { allBlogs } from "contentlayer/generated";
 import { compareDesc, format, parseISO } from "date-fns";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "blog",
-  description: "i write about tech, books, & self-improvement",
+  description: "i talk about tech, creator economy, & self-improvement",
   keywords: ["tech", "books", "self-improvement"],
 };
 
@@ -32,8 +33,6 @@ const Blog = () => {
                 {format(parseISO(post.publishedAt), "LLLL d, yyyy")}
               </p>
             </div>
-
-            {/* <p className="text-sm opacity-50 italic">290,021 views</p> */}
           </Link>
         ))}
     </div>

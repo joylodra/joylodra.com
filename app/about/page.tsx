@@ -22,42 +22,31 @@ const About = () => {
       <h1 className="text-4xl font-serif tracking-tighter">about me</h1>
 
       <p>
-        hey there, my name is joy. it's great to have you here on my personal
-        page. i'm currently on an exciting entrepreneurship journey in the
-        startup game. my ultimate goal? freedom of{" "}
-        <b>time, money, and location</b>.
+        It's great to have you here on my personal page. I'm currently on an
+        exciting entrepreneurship journey in building an influencer marketing
+        platform, connecting brands and influencers to work together.
+      </p>
+
+      <hr className="dark:opacity-25" />
+
+      <p>
+        When it comes to coding, there's nothing that excites me more than
+        full-stack development. Thank God, I discovered Next.js along the way.
+        What sets Next.js apart is its focus on the developer experience. And
+        with its support for TypeScript and React, I can write safer, more
+        maintainable code that's easier to debug and scale.
       </p>
 
       <p>
-        glad you got to this page because the image below showcases my ups and
-        downs so far:
-      </p>
-
-      <Image
-        className="rounded-lg"
-        src="/images/assets/journey.png"
-        alt="my life journey"
-        width={1600}
-        height={840}
-      />
-
-      <hr className="mt-5 mb-5 dark:opacity-25" />
-
-      <p>
-        when it comes to coding, there's nothing that excites me more than
-        full-stack development. i really enjoy working with <b>Next.js</b> for
-        building web applications, and i find <b>React Native</b> to be a
-        fantastic tool for mobile app development.
+        But what really makes Next.js special is how fast it enables me to ship
+        products to customers
       </p>
 
       <p>
-        i know there is not much to say, but i'm going to keep on updating this
-        page as life goes on 😊
-      </p>
-
-      <p>
-        feel free to hit me up by clicking on one of the links below or send me
-        an email to joylodra@gmail.com
+        I know there is not much to say, but i'm going to keep on updating this
+        page as life goes on 😊. Oh, I'm always happy to connect with
+        like-minded individuals, so feel free to reach out to me on any social
+        media platform or via email at joylodra@gmail.com
       </p>
 
       <div className="grid grid-cols-1 gap-2 mt-5 md:grid-cols-3">
@@ -65,7 +54,7 @@ const About = () => {
           rel="noopener noreferrer"
           target="_blank"
           className="flex justify-between items-center border border-black dark:border-white border-opacity-25 
-          rounded-lg p-2 hover:bg-neutral-100 dark:hover:bg-[#262626] transition-opacity"
+          rounded-lg p-2 hover:bg-neutral-100 dark:hover:bg-[#262626] transition-all"
           href="https://twitter.com/joylodra"
         >
           <div className="flex items-center gap-2">
