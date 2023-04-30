@@ -9,7 +9,7 @@ const Sidebar = () => {
   }
 
   return (
-    <div className="md:sticky md:top-0">
+    <div className="h-fit md:sticky md:top-5">
       <div className="flex flex-col gap-2 md:gap-5">
         <Link href="/" className="font-serif text-4xl font-extrabold p-1">
           JL
