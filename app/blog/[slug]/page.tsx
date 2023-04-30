@@ -112,7 +112,7 @@ const Post = ({ params: { slug } }: Props) => {
   const MDXContent = useMDXComponent(post.body.code);
 
   return (
-    <article className="prose prose-neutral dark:prose-invert">
+    <article className="prose prose-neutral dark:prose-invert w-full max-w-max">
       <script type="application/ld+json">
         {JSON.stringify(post.structuredData)}
       </script>
