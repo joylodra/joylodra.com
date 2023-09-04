@@ -124,7 +124,7 @@ const Post = ({ params: { slug } }: Props) => {
         <p className="opacity-50 text-sm mt-0">
           by {post.author} //{" "}
           <time dateTime={post.publishedAt}>
-            {format(parseISO(post.publishedAt), "LLLL d, yyyy")}
+            {format(parseISO(post.publishedAt), "LLLL d yyyy")}
           </time>
         </p>
       </div>

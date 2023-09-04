@@ -12,8 +12,10 @@ export const metadata: Metadata = {
 
 const Blog = () => {
   return (
-    <div className="flex flex-col gap-5">
-      <h1 className="text-4xl font-serif tracking-tighter">blog</h1>
+    <div className="flex flex-col gap-8">
+      <h1 className="text-4xl font-serif tracking-tighter font-bold">
+        blog ✍️
+      </h1>
 
       {allBlogs
         .sort((a, b) => {

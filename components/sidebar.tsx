@@ -31,13 +31,13 @@ const Sidebar = () => {
 
           <Link
             className={`px-2 py-1 hover:opacity-100 rounded-lg ${
-              pathname === "/about"
+              pathname === "/services"
                 ? "bg-neutral-100 dark:bg-[#262626] opacity-100"
                 : "opacity-50"
             }`}
-            href="/about"
+            href="/services"
           >
-            about
+            services
           </Link>
 
           <div className="flex">

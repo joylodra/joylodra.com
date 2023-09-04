@@ -10,12 +10,48 @@ export const metadata: Metadata = {
 
 const Books = () => {
   return (
-    <div className="flex flex-col gap-5">
-      <h1 className="text-4xl font-serif tracking-tighter">
-        books i recommend
+    <div className="flex flex-col gap-8">
+      <h1 className="text-4xl font-serif tracking-tighter font-bold">
+        books i recommend 📚
       </h1>
 
       <Book
+        title={"deep work"}
+        author={"cal newport"}
+        desc={
+          "this book changed my mindset about the importance of the ability to focus."
+        }
+        shopeeLink="https://shope.ee/qEEPWsxQQ"
+      />
+
+      <hr className="dark:opacity-25 mt-5 mb-5" />
+
+      <Book
+        title={"the lean startup"}
+        author={"Eric Ries"}
+        desc={"the first book that got me interested into building a startup."}
+        shopeeLink="https://shope.ee/AUOjv9CibQ"
+      />
+
+      <hr className="dark:opacity-25 mt-5 mb-5" />
+
+      <Book
+        title={"atomic habits"}
+        author={"James Clear"}
+        desc={"this book literally helped me double my productivity."}
+        shopeeLink="https://shope.ee/2L32BvQvJg"
+      />
+
+      <hr className="dark:opacity-25 mt-5 mb-5" />
+
+      <Book
+        title={"psychology of money"}
+        author={"Morgan Housel"}
+        desc={"this book gave me different perspectives about money."}
+        shopeeLink="https://shope.ee/2pzImxZOKv"
+      />
+
+      {/* <Book
         title={"deep work"}
         author={"cal newport"}
         desc={
@@ -61,7 +97,7 @@ const Books = () => {
         printLink={"https://amzn.to/3kXxSRB"}
         eBookLink={"https://amzn.to/3yrIHPc"}
         audioBookLink={"https://amzn.to/3yoTcm9"}
-      />
+      /> */}
     </div>
   );
 };
