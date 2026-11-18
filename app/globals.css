@@ -18,6 +18,7 @@ footer {
 }
 header {
   height: 82px;
+  border-bottom: 1px solid var(--line);
   padding: 0 5vw;
   display: flex;
   align-items: center;
