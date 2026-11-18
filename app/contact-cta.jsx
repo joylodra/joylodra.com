@@ -2,7 +2,6 @@ export default function ContactCTA() {
   return (
     <div className="contact-panel">
       <h2>Work with me.</h2>
-      <p>Have a product in mind or a creator partnership to explore? Tell me what you’re working on.</p>
       <a
         className="contact-button"
         href="https://wa.me/6285174259955"
