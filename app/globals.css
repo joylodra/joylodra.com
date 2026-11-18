@@ -359,6 +359,8 @@ footer {
   --muted: #555;
   --line: #c9c8c5;
   --orb: #deddd9;
+  --contact-surface: #dadbdc;
+  --contact-highlight: #eff0ef;
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
@@ -367,6 +369,8 @@ footer {
   --muted: #b5b5b5;
   --line: #393939;
   --orb: #303030;
+  --contact-surface: #252629;
+  --contact-highlight: #37383c;
 }
 body {
   background: var(--paper);
@@ -1478,11 +1482,6 @@ header nav button#theme {
 }
 
 .contact-panel {
-  --paper: #fff;
-  --ink: #141414;
-  --muted: #555;
-  --line: #dedede;
-  color-scheme: light;
   position: relative;
   isolation: isolate;
   overflow: hidden;
@@ -1494,7 +1493,7 @@ header nav button#theme {
   border-radius: clamp(18px, 2.6vw, 40px);
   color: var(--ink);
   border: 1px solid var(--line);
-  background: var(--paper);
+  background: radial-gradient(ellipse at 50% 0%, var(--contact-highlight), transparent 76%), var(--contact-surface);
 }
 .contact-panel::before, .contact-panel::after {
   content: "";
