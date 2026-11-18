@@ -1,0 +1,70 @@
+{
+  "experience": [
+    {
+      "name": "Seefluencer",
+      "dates": "Aug 2023 – Present",
+      "role": "CEO & Co-Founder",
+      "logo": "/logos/seefluencer.png",
+      "summary": "I co-founded Seefluencer in Jakarta and lead the company as CEO.",
+      "place": "Jakarta, Indonesia"
+    },
+    {
+      "name": "PENDIRI™",
+      "dates": "May 2023 – Present",
+      "role": "Founder",
+      "logo": "/logos/pendiri.png",
+      "summary": "We pitch and negotiate brand partnerships for the creators we represent.",
+      "place": "Jakarta, Indonesia"
+    },
+    {
+      "name": "Microsoft",
+      "dates": "Aug 2021 – Jul 2022",
+      "role": "QA Engineer II · Contract",
+      "logo": "/logos/microsoft.png",
+      "summary": "I tested Teams and Skype across web, desktop, and mobile, tracked bugs in Azure DevOps, and reported test results in Power BI.",
+      "place": "Redmond, Washington"
+    },
+    {
+      "name": "SekilasAja!",
+      "dates": "Jun 2021 – May 2023",
+      "role": "CTO & Co-Founder",
+      "logo": "/logos/sekilasaja.png",
+      "summary": "We made 15-minute book summaries available in video, audio, and text, and hosted weekly webinars on business, relationships, and personal growth.",
+      "place": ""
+    },
+    {
+      "name": "University of Washington",
+      "dates": "Apr 2021 – Jun 2021",
+      "role": "Computer Science Grader",
+      "logo": "/logos/uw.png",
+      "summary": "I graded assignments, exams, and group projects for more than 30 students in CSS 370 (Analysis and Design).",
+      "place": "Washington"
+    },
+    {
+      "name": "Edmonds College",
+      "dates": "Nov 2018 – Jul 2022",
+      "role": "Math Teacher’s Assistant",
+      "logo": "/logos/edmonds.png",
+      "summary": "I helped up to 30 students a day with math coursework and led private review sessions for five students.",
+      "place": "Edmonds, Washington"
+    }
+  ],
+  "education": [
+    {
+      "name": "University of Washington",
+      "dates": "2019 – 2021",
+      "role": "Bachelor of Science in Computer Science and Software Engineering",
+      "logo": "/logos/uw.png",
+      "summary": "",
+      "place": ""
+    },
+    {
+      "name": "Edmonds College",
+      "dates": "2017 – 2019",
+      "role": "Associate of Arts in Computer Science",
+      "logo": "/logos/edmonds.png",
+      "summary": "",
+      "place": ""
+    }
+  ]
+}
