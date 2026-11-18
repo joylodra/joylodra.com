@@ -183,7 +183,6 @@ export default function Page() {
       </main>
       <footer>
         <span>© Copyright 2026 Joy Lodra</span>
-        <a href="#top">Back to top ↑</a>
         <div className="footer-wordmark" aria-hidden="true">joy lodra.</div>
       </footer>
     </>
