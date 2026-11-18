@@ -1487,19 +1487,38 @@ header nav button#theme {
 }
 
 .contact-panel {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   width: min(100%, 1180px);
   display: grid;
   justify-items: center;
-  gap: clamp(24px, 4vw, 46px);
-  padding: clamp(62px, 8vw, 120px) 20px;
+  gap: 18px;
+  padding: clamp(46px, 5vw, 78px) 24px;
   border-radius: clamp(18px, 2.6vw, 40px);
   color: var(--ink);
   border: 1px solid var(--line);
-  background: linear-gradient(
-    135deg,
-    var(--paper),
-    color-mix(in srgb, var(--paper) 92%, var(--ink))
-  );
+  background: linear-gradient(120deg, var(--paper), color-mix(in srgb, var(--paper) 89%, var(--ink)));
+}
+.contact-panel::before, .contact-panel::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 48%;
+  height: 190%;
+  border-radius: 50%;
+  pointer-events: none;
+  border: 1px solid color-mix(in srgb, var(--ink) 13%, transparent);
+  background: linear-gradient(105deg, transparent 40%, color-mix(in srgb, var(--ink) 9%, transparent) 88%, transparent);
+  transform: rotate(32deg);
+}
+.contact-panel::before {left: -38%; bottom: -65%;}
+.contact-panel::after {right: -38%; top: -65%;}
+.contact-panel p {margin: 0; max-width: 40ch; color: var(--muted); font-size: clamp(16px, 1.4vw, 20px); line-height: 1.5; text-wrap: balance;}
+.contact-panel .contact-button {margin-top: 6px;}
+@media (max-width: 650px) {
+  .contact-panel::before {left: -46%;}
+  .contact-panel::after {right: -46%;}
 }
 .footer-wordmark {
   flex: 0 0 100%;
