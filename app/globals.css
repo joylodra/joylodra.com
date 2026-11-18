@@ -824,8 +824,7 @@ section[id] {
 }
 .product-caption a {
   color: var(--ink);
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  text-decoration: none;
 }
 .companies {
   display: grid;
@@ -1431,8 +1430,8 @@ header nav button#theme {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: #fff;
-  color: #572316;
+  background: var(--ink);
+  color: var(--paper);
   border-radius: 99px;
   padding: 13px 21px;
   font-size: 16px;
@@ -1456,9 +1455,11 @@ header nav button#theme {
   width: 19px;
   height: 19px;
 }
-.socials a:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+.socials .links a:hover {
+  color: var(--muted);
+}
+.contact-panel .contact-button:hover {
+  background: color-mix(in srgb, var(--ink) 82%, var(--paper));
 }
 @media (max-width: 650px) {
   .socials .links {
@@ -1492,16 +1493,17 @@ header nav button#theme {
   gap: clamp(24px, 4vw, 46px);
   padding: clamp(62px, 8vw, 120px) 20px;
   border-radius: clamp(18px, 2.6vw, 40px);
-  color: white;
-  background:
-    radial-gradient(ellipse at 50% 40%, #86251fe8 0%, transparent 55%),
-    radial-gradient(ellipse at 3% 110%, #ffd3ac 0%, #ee7953 25%, transparent 55%),
-    radial-gradient(ellipse at 100% -20%, #ff945c 0%, transparent 55%),
-    linear-gradient(115deg, #c34024, #9d2b20 65%, #dc572c);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: linear-gradient(
+    135deg,
+    var(--paper),
+    color-mix(in srgb, var(--paper) 92%, var(--ink))
+  );
 }
 .footer-wordmark {
   flex: 0 0 100%;
-  margin-top: clamp(12px, 3vw, 44px);
+  margin-top: clamp(6px, 1.75vw, 26px);
   text-align: center;
   white-space: nowrap;
   font: 600 min(24vw, 375px)/1 "Helvetica Neue", Arial, sans-serif;
